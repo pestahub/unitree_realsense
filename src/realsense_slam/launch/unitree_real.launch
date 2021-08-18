@@ -1,0 +1,15 @@
+<launch>
+  <node name="odom_handler" pkg="realsense_slam" type="odom_handler_node"  output="screen" respawn="false" respawn_delay="0">
+    <remap from="odom_in" to="/fused_odometry"/>
+    <remap from="odom_out" to="/odom"/>      
+  </node>
+
+  <node name="teleoperation_node" pkg="a1sdk" type="a1_telemetry_teleop" output="screen"/>
+
+  <node name="pos_to_odom" pkg="a1sdk" type="pos_to_odom" output="screen" />
+
+  <include file="$(find realsense_slam)/launch/realsense_bringup.launch" />
+  <include file="$(find realsense_slam)/launch/rtabmap.launch" />
+  <include file="$(find realsense_slam)/launch/move_base.launch" />
+
+</launch>
