@@ -4,14 +4,14 @@ Main launch:
 
 Dependencies list:
 
-    [ros melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
-    [unitree_legged_sdk](https://github.com/unitreerobotics/unitree_legged_sdk) 
-    unitree_ros (only sim?)
-    realsense_ros_gazebo (only sim?)
-    rtabmap_ros (https://github.com/introlab/rtabmap_ros)
-    realsense2_camera (https://github.com/IntelRealSense/realsense-ros)
-    move_base ( sudo apt install ros-melodic-move-base ) 
-    [depthimage_to_laserscan] (https://github.com/ros-perception/depthimage_to_laserscan)
+* [ros melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
+* [unitree_legged_sdk](https://github.com/unitreerobotics/unitree_legged_sdk) 
+* unitree_ros (only sim?)
+* realsense_ros_gazebo (only sim?)
+* [rtabmap_ros](https://github.com/introlab/rtabmap_ros)
+* [realsense2_camera](https://github.com/IntelRealSense/realsense-ros)
+* move_base `sudo apt install ros-melodic-move-base`
+* [depthimage_to_laserscan](https://github.com/ros-perception/depthimage_to_laserscan)
 
 
 ~/.bashrc :
